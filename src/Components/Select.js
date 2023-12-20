@@ -54,10 +54,12 @@ const Select = () => {
 
   useEffect(() => {
     fetchStates();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCountry]);
 
   useEffect(() => {
     fetchCities();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCountry, selectedState]);
 
   return (
